@@ -86,7 +86,13 @@ const Login = () => {
             />
 
             {error && <p className="text-red-500 text-xs pb-1">{error}</p>}
-            <button type="submit" className="btn-primary">
+            <button
+              type="submit"
+              className="btn-primary"
+              onClick={() => {
+                navigate("/dashboard");
+              }}
+            >
               LOGIN
             </button>
             <p className="text-xs text-slate-500 text-center my-4">Or</p>
